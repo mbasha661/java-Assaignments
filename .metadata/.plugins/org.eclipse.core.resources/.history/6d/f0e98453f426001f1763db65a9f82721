@@ -1,0 +1,31 @@
+package moodleAssign;
+
+public class EB_Reading {
+
+	public static void main(String[] args) {
+		EB_Reading assessor=new EB_Reading();
+		int consumedUnits=assessor.reading();
+		double payment = assessor.calculate(consumedUnits);
+		   System.out.println("Consumed Units: " + consumedUnits);
+	        System.out.println("Payment: " + payment);
+	}
+	public static double calculate(int consumedUnits) {
+        double rate;
+        
+        // Define the payment calculation logic based on consumed units
+        if (consumedUnits <= 100) {
+            rate = 1.5; // Example rate for the first 100 units
+        } else if (consumedUnits <= 200) {
+            rate = 2.0; // Example rate for the next 100 units
+        } else {
+            rate = 3.0; // Example rate for units above 200
+        }
+        
+        return consumedUnits * rate;
+    }
+	public int reading() {
+	
+		return 100;
+	}
+
+}

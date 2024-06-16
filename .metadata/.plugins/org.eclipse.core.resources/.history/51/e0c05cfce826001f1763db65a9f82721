@@ -1,0 +1,14 @@
+package moodleAssign;
+
+public class Theatre {
+	String movie_name;
+	int movie_time;
+
+	public static void main (String[] args)
+	{
+	Theatre movie1=new Theatre();
+	}
+	
+	
+	
+}

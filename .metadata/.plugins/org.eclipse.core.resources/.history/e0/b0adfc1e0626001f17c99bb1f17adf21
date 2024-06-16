@@ -1,0 +1,9 @@
+package practice;
+
+public class Accessmod {
+	
+	
+	int rollno=21;
+	String name="basha";
+
+}
